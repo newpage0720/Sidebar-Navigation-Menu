@@ -6,20 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+<style>
+    /*-----------------------------------*\
+      #RESET
+    \*-----------------------------------*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        height: auto;
+    }
+
+    .sideMenu{
+        position: relative;
+        width: 150px;
+        height: 100vh;
+        background-color: beige;
+    }
+    .switchBtn{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color:aquamarine;
+        left: 150px;
+        text-align: right;
+        border-radius: 50%;
+        padding-right: 3px;
+        line-height: 25px;
+        box-shadow: 0 0 5px 1px;
+
+    }
+
+    .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: aqua;
+    }
+
+    .items{
+        background-color:rgb(187, 236, 138);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+
+    }
+
+.item{
+    background-color: rgb(215, 181, 231);
+    padding: 10px 0px;
+}
+
+.subItem{
+    background-color: rgb(230, 188, 141);
+}
+</style>
 </head>
 
 <body>
 
-    <i class="fa fa-angle-right"></i>
-    <i class="fa fa-bell"></i>Notifications
-    <i class="fa fa-pie-chart"></i>Analytics
-    Sales
-    Subscription
-    Users
-    Revenue
-    <i class="fa fa-calendar"></i>
-    Calendar
+    <div class="sideMenu">
+
+        <div class="switchBtn">
+            <i class="fa fa-angle-right"></i>
+        </div>
+
+        <div class="container">
+            <div class="items">
+
+                <div class="item">
+                    <i class="fa fa-bell"></i>Notifications
+                </div>
+
+                <div class="item">
+                    <i class="fa fa-pie-chart"></i>Analytics
+
+                    <div class="subItem">
+                        <div class="subItemText">Sales</div>
+                        <div class="subItemText">Subscription</div>
+                        <div class="subItemText">Users</div>
+                        <div class="subItemText">Revenue</div>
+                        
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="fa fa-calendar"></i>Calendar
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
